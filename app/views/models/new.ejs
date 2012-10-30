@@ -1,0 +1,11 @@
+<div class="page-header">
+    <h1>New <%- modelName %></h1>
+</div>
+
+<% formFor(model, {action: pathTo.models, method: 'POST', id: "model-form", class: 'form-horizontal'}, function (form) { %>
+    <%- partial('models/form.ejs', {locals: {form: form}}) %>
+    <div class="form-actions">
+        <%- form.submit('<i class="icon-ok icon-white"></i> Create ' + modelName, {class: 'btn btn-primary'}) %> or
+        <%- linkTo('Cancel', pathTo.models, {class: 'btn'}) %>
+    </div>
+<% }); %>

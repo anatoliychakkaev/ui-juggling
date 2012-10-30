@@ -1,0 +1,21 @@
+{ "name": "ui-juggling"
+, "version": "0.0.1"
+, "engines": ["node >= 0.4.0"]
+, "main": "server.js"
+, "dependencies":
+  { "ejs":              "*"
+  , "ejs-ext":          "< 0.1.2"
+  , "express":          "~2.x"
+  , "railway":          "https://github.com/1602/express-on-railway/tarball/master"
+  , "jugglingdb":       ">= 0.1.0"
+  , "coffee-script":    ">= 1.1.1"
+  },
+  "devDependencies":
+  { "nodeunit":         "*"
+  , "sinon":            "*"
+  , "semicov":          "*"
+  }
+, "scripts":
+  { "test": "nodeunit test/*/*"
+  }
+}

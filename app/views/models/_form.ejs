@@ -1,0 +1,15 @@
+<%- errorMessagesFor(model) %>
+
+<% Object.keys(properties).forEach(function (p) { %>
+<div class="control-group">
+    <%- form.label(p, false, {class: "control-label"}) %>
+    <div class="controls">
+        <% if ('object' === typeof model[p] && model[p]) { %>
+            <%- form.textarea(p, {value: JSON.stringify(model[p], true, '  '), rows: 10}) %>
+        <% } else { %>
+            <%- form.input(p) %>
+        <% } %>
+    </div>
+</div>
+<% }) %>
+

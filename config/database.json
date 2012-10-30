@@ -1,0 +1,10 @@
+{ "development":
+  { "driver":   "redis2"
+  }
+, "test":
+  { "driver":   "memory"
+  }
+, "production":
+  { "driver":   "memory"
+  }
+}
