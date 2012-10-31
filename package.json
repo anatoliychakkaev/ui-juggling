@@ -5,7 +5,7 @@
 , "dependencies":
   { "ejs":              "*"
   , "ejs-ext":          "< 0.1.2"
-  , "express":          "~2.x"
+  , "express":          "~3.x"
   , "railway":          "https://github.com/1602/express-on-railway/tarball/master"
   , "jugglingdb":       ">= 0.1.0"
   , "coffee-script":    ">= 1.1.1"
